@@ -757,13 +757,22 @@ section {
     color: #0a1245;
     background: none;
     border: 1px solid #f6f7fb;
-    ;
+    text-align:right;
+}
+select.form-control {
+    height: 50px;
+    border-radius: 0;
+    font-size: 13px;
+    color: #0a1245;
+    background: none;
+    border: 1px solid #f6f7fb;
+    text-align: right;
 }
 
-.theme-bg .form-control, .dark-bg .form-control {
-    background: none;
-    border-bottom-color: #ffffff;
-}
+    .theme-bg .form-control, .dark-bg .form-control {
+        background: none;
+        border-bottom-color: #ffffff;
+    }
 
 .dark-bg .form-control, .theme-bg .form-control {
     color: #ffffff;
@@ -839,7 +848,7 @@ iframe {
 .help-block.with-errors {
     position: absolute;
     color: red;
-    left: 15px;
+    right: 15px;
     font-size: 10px;
     line-height: 14px;
 }
@@ -1027,7 +1036,7 @@ select:-webkit-autofill {
     border: 1px solid #f6f7fb;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     box-sizing: border-box;
     clear: both;
     cursor: pointer;
@@ -1038,9 +1047,9 @@ select:-webkit-autofill {
     height: 50px;
     line-height: 50px;
     outline: none;
-    padding-right: 30px;
+    padding-left: 30px;
     position: relative;
-    text-align: left !important;
+    text-align: right !important;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     -webkit-user-select: none;
@@ -1056,7 +1065,7 @@ select:-webkit-autofill {
 }
 
 .nice-select:active, .nice-select.open, .nice-select:focus {
-    border-color: #0083ff;
+    border-color: #00f2aa;
 }
 
 .nice-select:after {
@@ -1068,7 +1077,7 @@ select:-webkit-autofill {
     margin-top: -4px;
     pointer-events: none;
     position: absolute;
-    right: 12px;
+  left: 12px;
     top: 50%;
     -webkit-transform-origin: 66% 66%;
     -ms-transform-origin: 66% 66%;
@@ -1182,13 +1191,14 @@ select:-webkit-autofill {
     min-height: 40px;
     outline: none;
     padding: 0 10px;
-    text-align: left;
+    text-align: right;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
     .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-        background-color: #414896;
+        background-color: #f4814f;
+        color: #445196;
     }
 
     .nice-select .option.selected {
@@ -2358,3 +2368,90 @@ input.form-product {
     background: transparent !important;
     box-shadow: 1px 1px 16px #d6d6d6;
 }
+.form-login-section .contact-main .form-group {
+    text-align: right;
+}
+    .form-login-section .contact-main .form-group .label-input {
+        text-align: right;
+        margin-bottom: 10px;
+        color: #4f56a6;
+        font-size: 18px;
+    }
+    .form-login-section .contact-main .form-group .note {
+        color: #989898;
+        margin-bottom: 10px;
+        font-size: 14px;
+        margin-top: -8px;
+    }
+        .form-login-section .contact-main .form-group .note .span-note {
+            display: inline-block;
+            position: relative;
+            direction: ltr;
+        }
+    .form-login-section .contact-main .form-group .file-box {
+        position: relative;
+        padding: .375rem .75rem;
+        padding-left: 45px;
+        height: 50px;
+        border-radius: 0;
+        font-size: 13px;
+        color: #0a1245;
+        background: none;
+        border: 1px solid #f6f7fb;
+    }
+        .form-login-section .contact-main .form-group .file-box .form-control {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            right: 0;
+            top: 0;
+            padding: 0;
+            z-index: 1;
+        }
+        .form-login-section .contact-main .form-group .file-box .icon-box {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 48px;
+            background: #404686;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+            .form-login-section .contact-main .form-group .file-box .icon-box i {
+                color: #fff;
+            }
+.form-login-section{
+    position:relative;
+}
+    .form-login-section::before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 600px;
+        height: 400px;
+        background: url(../images/bg/05.png);
+        background-repeat: no-repeat;
+        background-position: right 0 bottom 0;
+        background-size: cover;
+        z-index: 0;
+        /* animation: 1s clockwise infinite; */
+        opacity: .3;
+        bottom: -14px;
+        left: -18px;
+        transition: opacity .4s .2s;
+    }
+.par-form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+@media (max-width:767px) {
+    .form-login-section::before {
+        width: 350px;
+        height: 218px;
+    }
+    }
