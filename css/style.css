@@ -54,6 +54,7 @@ body {
 
 .page-wrapper {
     overflow-x: hidden;
+    position:relative;
 }
 /* ------------------------
     Typography
@@ -164,7 +165,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .title2{
@@ -275,7 +276,9 @@ section {
 .grey-bg {
     background-color: #e1fdf5;
 }
-
+.light-grey-bg {
+    background-color: #f7f7f7;
+}
 .theme-bg {
     background-color: #0083ff;
 }
@@ -2448,6 +2451,26 @@ input.form-product {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+}
+.ads{
+    
+    background: url(../images/bg/09.png) #f7f7f7;
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
+    background-size: cover;
+    z-index: 0;
+    opacity: 2;
+    bottom: -5px;
+    left: -3px;
+  
+    transition: opacity .4s .2s;
+}
+.post-title h6 {
+    color: #535ca8;
+    font-weight: 500;
+}
+.post-desc a {
+    font-size: 15px;
 }
 @media (max-width:767px) {
     .form-login-section::before {

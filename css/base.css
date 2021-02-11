@@ -31,29 +31,29 @@ a:focus {
 }
 
 a:hover {
-    color: #0083ff;
+    color: #f4814f;
     text-decoration: none !important;
 }
 
 a, button, input {
     outline: medium none !important;
-    color: #0083ff;
+    color: #f4814f
 }
 
 *::-moz-selection {
-    background: #0083ff;
+    background: #f4814f;
     color: #fff;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: #0083ff;
+    background: #f4814f;
     color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #0083ff;
+    background: #f4814f;
     color: #fff;
     text-shadow: none;
 }
